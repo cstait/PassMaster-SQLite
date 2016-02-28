@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data;
-using System.Windows.Forms;
 using System.Data.SQLite;
 
 //class serves as the controller access to Database

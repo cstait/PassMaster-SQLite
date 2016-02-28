@@ -27,9 +27,11 @@ namespace PassMaster
             string password = txtPass.Text;
             string website = txtWeb.Text;
 
-            PassMaster.DBManager.UpdateTable(id, username, password, website);
             //shows confirmation box to user
-            MessageBox.Show("Entry Successful", "Confirmation");
+            if (MessageBox.Show("Are you sure you want to edit?", "Confirm edit", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            PassMaster.DBManager.UpdateTable(id, username, password, website);
+
+
             //refreshes datagrid
             caller.refreshDG();
             this.Close();
