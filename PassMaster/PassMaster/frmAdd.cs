@@ -17,6 +17,7 @@ namespace PassMaster
         public frmAdd(frmMain mainForm)
         {
             InitializeComponent();
+            Initialize.checkTheme(this);
             caller = mainForm;
         }
 

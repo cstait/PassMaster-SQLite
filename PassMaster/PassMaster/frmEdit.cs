@@ -12,6 +12,7 @@ namespace PassMaster
         public frmEdit(PassMaster.frmMain frmMain, string id, string username, string password, string website)
         {
             InitializeComponent();
+            Initialize.checkTheme(this);
             caller = frmMain;
             this.id = id;
             txtUser.Text = username;

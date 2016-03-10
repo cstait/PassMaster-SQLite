@@ -3,6 +3,8 @@ using System.Data;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using PassMaster;
+using PassMaster.Properties;
+
 
 namespace PassMaster
 {
@@ -10,7 +12,9 @@ namespace PassMaster
     {
         public frmMain()
         {
+
             InitializeComponent();
+            Initialize.checkTheme(this);
         }
 
         //function runs when main form reaches loading stage
@@ -49,6 +53,7 @@ namespace PassMaster
             catch (Exception ex)
             {
                 MessageBox.Show("Please select a valid record to delete!", "Error");
+                Console.WriteLine(ex);
             }
         }
 
@@ -85,6 +90,7 @@ namespace PassMaster
             catch(Exception ex)
             {
                 MessageBox.Show("Please select a valid record to edit!", "Error");
+                Console.WriteLine(ex);
             }
             
         }
@@ -98,6 +104,12 @@ namespace PassMaster
         {
             aboutBox about = new aboutBox();
             about.Show();
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSettings setting = new frmSettings();
+            setting.Show();
         }
     }
     }

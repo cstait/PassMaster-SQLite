@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y7ZDAKmM/Vk+AN3TblT1hHo627qgIdjmD+p+YydHbBU=</dsig:DigestValue>
+        <dsig:DigestValue>XQKnjvwotvQz9XnhXblQSKyFxJRc2owMQkHZl+MO4ew=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -77,13 +77,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PassMaster.exe.config" size="555">
+  <file name="PassMaster.exe.config" size="1310">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Vd/041SytwngI6Vnf/x4YwJp6/cqcptHJD4Q09otuH8=</dsig:DigestValue>
+      <dsig:DigestValue>EiBxE0BQp08n4mbBaDunKiRCncWLOxviwcaaq/EU8QE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
