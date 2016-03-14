@@ -1,5 +1,6 @@
 ﻿
 using System.Windows.Forms;
+using PassMaster.Properties;
 
 namespace PassMaster
 {

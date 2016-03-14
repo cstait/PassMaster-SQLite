@@ -111,6 +111,11 @@ namespace PassMaster
             frmSettings setting = new frmSettings();
             setting.Show();
         }
+
+        private void tsGithub_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/cstait/PassMaster-SQLite");
+        }
     }
     }
 

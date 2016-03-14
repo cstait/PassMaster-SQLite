@@ -34,10 +34,12 @@
             this.dgPassword = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsSettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsExit = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsDash = new System.Windows.Forms.ToolStripSeparator();
+            this.tsGithub = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgPassword)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -98,23 +100,32 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.settingsToolStripMenuItem,
-            this.menuExit});
+            this.tsSettings,
+            this.tsDash,
+            this.tsExit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
-            // menuExit
+            // tsSettings
             // 
-            this.menuExit.Name = "menuExit";
-            this.menuExit.Size = new System.Drawing.Size(152, 22);
-            this.menuExit.Text = "&Exit";
-            this.menuExit.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            this.tsSettings.Name = "tsSettings";
+            this.tsSettings.Size = new System.Drawing.Size(152, 22);
+            this.tsSettings.Text = "&Settings";
+            this.tsSettings.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
+            // tsExit
+            // 
+            this.tsExit.Name = "tsExit";
+            this.tsExit.Size = new System.Drawing.Size(152, 22);
+            this.tsExit.Text = "&Exit";
+            this.tsExit.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.tsGithub});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
@@ -122,16 +133,21 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // settingsToolStripMenuItem
+            // tsDash
             // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.settingsToolStripMenuItem.Text = "&Settings";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            this.tsDash.Name = "tsDash";
+            this.tsDash.Size = new System.Drawing.Size(149, 6);
+            // 
+            // tsGithub
+            // 
+            this.tsGithub.Name = "tsGithub";
+            this.tsGithub.Size = new System.Drawing.Size(152, 22);
+            this.tsGithub.Text = "&Go to Github";
+            this.tsGithub.Click += new System.EventHandler(this.tsGithub_Click);
             // 
             // frmMain
             // 
@@ -168,9 +184,11 @@
         private System.Windows.Forms.DataGridView dgPassword;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem menuExit;
+        private System.Windows.Forms.ToolStripMenuItem tsExit;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsSettings;
+        private System.Windows.Forms.ToolStripSeparator tsDash;
+        private System.Windows.Forms.ToolStripMenuItem tsGithub;
     }
 }
