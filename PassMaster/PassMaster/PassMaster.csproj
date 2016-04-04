@@ -132,6 +132,7 @@
     </Compile>
     <Compile Include="Initialize.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Prompt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>

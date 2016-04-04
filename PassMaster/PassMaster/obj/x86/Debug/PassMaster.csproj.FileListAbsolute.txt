@@ -11,11 +11,10 @@ C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x8
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.frmEdit.resources
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.frmMain.resources
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.frmAdd.resources
+C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.frmSettings.resources
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.Properties.Resources.resources
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.csproj.GenerateResource.Cache
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.exe.manifest
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.application
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.exe
 C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.pdb
-C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.csprojResolveAssemblyReference.cache
-C:\Users\Cameron\Documents\GitHub\PassMaster-SQLite\PassMaster\PassMaster\obj\x86\Debug\PassMaster.frmSettings.resources

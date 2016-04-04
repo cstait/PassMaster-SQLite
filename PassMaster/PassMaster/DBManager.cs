@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.SQLite;
-
+using PassMaster.Properties;
+using System.Windows.Forms;
 //class serves as the controller access to Database
 
 
@@ -27,16 +28,34 @@ namespace PassMaster
                     Console.WriteLine("Error file exists!");
                 }
                 else {
-                    SQLiteConnection.CreateFile("pmDB.sqlite");
+                    
+                    SQLiteConnection.CreateFile("pmDB.sqlite");    
+                string promptValue = Prompt.ShowDialog("New Password", "This is the first time creating the database, would you like to enter "
+                    + "a password for your database?");
+                Settings.Default.Password = promptValue;
+                Settings.Default.Save();
+                MessageBox.Show(Settings.Default.Password.ToString());
+            }
+
+
+            string pw = "Password=" + Settings.Default["Password"].ToString();
+                conn = new SQLiteConnection(connStr + pw);
+
+                string answer = "";    
+
+
+                while (!(answer.Equals(Settings.Default["Password"].ToString())))
+                {
+                answer = Prompt.ShowDialog("Enter Password", "Enter Password");
                 }
-
-
-                conn = new SQLiteConnection(connStr);
                 conn.Open();
+           
+            
+
                 string sql;
                 SQLiteCommand cmd;
-                //checks to see if table already exists, creates table otherwise
-                sql = "CREATE TABLE if not exists Password" +
+            //checks to see if table already exists, creates table otherwise
+            sql = "CREATE TABLE if not exists Password" +
                             "(Id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                             "Username VARCHAR(100), " +
                             "Password VARCHAR(100), " +
@@ -152,6 +171,17 @@ namespace PassMaster
             set{ }
         }
 
+        public static void ChangePassword(string newPW)
+        {
+            string pw = "Password=" + Settings.Default["Password"].ToString();
+            conn = new SQLiteConnection(connStr + pw);
+            conn.Open();
+            conn.ChangePassword(newPW);
+            conn.Close();
+            Settings.Default.Password = newPW;
+            Settings.Default.Save();
+
+        }
     }
     }
 

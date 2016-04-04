@@ -95,6 +95,7 @@
             this.btnChangePW.TabIndex = 5;
             this.btnChangePW.Text = "Change Password (NYI)";
             this.btnChangePW.UseVisualStyleBackColor = true;
+            this.btnChangePW.Click += new System.EventHandler(this.btnChangePW_Click);
             // 
             // frmSettings
             // 

@@ -65,6 +65,12 @@ namespace PassMaster
         {
             this.Close();
         }
+
+        private void btnChangePW_Click(object sender, EventArgs e)
+        {
+            string newPW = Prompt.ShowDialog("What do you want the new PW to be?", "New Password");
+            DBManager.ChangePassword(newPW);
+        }
     }
     }
 

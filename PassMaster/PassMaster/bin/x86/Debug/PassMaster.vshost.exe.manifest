@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PassMaster.exe" size="59880">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PassMaster.exe" size="61416">
       <assemblyIdentity name="PassMaster" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>42vBJItBh4KtZInFKa+pZehKI1TtcM/ZKXxaLK9/vgc=</dsig:DigestValue>
+        <dsig:DigestValue>VPapeDQ+GtCqkYlXPZSz+Y+6HUvVZsVcujPYIZc/lMU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -77,13 +77,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PassMaster.exe.config" size="1582">
+  <file name="PassMaster.exe.config" size="1693">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>5Is3SzYN0Pi4YKeuxVDMzBruwOvjSTVawQvGaxedWfQ=</dsig:DigestValue>
+      <dsig:DigestValue>zSXEDQBB0vz4y/WNpCawuYF+19mNObdQopmWgcgWxww=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
